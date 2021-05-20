@@ -74,6 +74,7 @@ body {
 
 .sub-content .title {
   position: absolute;
+  font-weight: bold;
   width: 100%;
   top: 0;
   margin-right: 10px;
