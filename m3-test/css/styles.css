@@ -1,100 +1,86 @@
 body {
-    font-size: 16px;
-    color: #fff;
-    background-color: #61122f;
-    font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
 }
 
-/**Header**/
+/** HEADER **/
 #header-nav {
-    background-color: #f6b319;
-    border-radius: 0;
-    border: 0;
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
 }
 
 #logo-img {
-    background: url('../images/restaurant-logo_large.png') no-repeat;
-    margin: 10px 15px 10px 0px;
-    width: 150px;
-    height: 150px;
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
 }
-
-/* .navbar-header {
-    display: flex; instead of using pull-left
-} */
 
 .navbar-brand {
-    padding-top: 25px;
+  padding-top: 25px;
 }
-
-/* restaurant name*/
-.navbar-brand h1 {
-    font-family: 'Lora', serif;
-    color: #ffff;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: .75;  
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
 }
-
 .navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-/*Kosher cert */
-.navbar-brand p {
-    color: #000;
-    text-transform: uppercase;
-    font-size: .7em;
-    margin-top: 15px;
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
 }
-
-/*star-k */
-.navbar-brand p span {
-    vertical-align: middle;
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
 }
 
 #nav-list {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 #nav-list a {
-    color: #951c49;
-    text-align: center;
+  color: #951C49;
+  text-align: center;
 }
 #nav-list a:hover {
-    background: #e7e7e7;
+  background: #E7E7E7;
 }
 #nav-list a span {
-    font-size: 1.8em;
+  font-size: 1.8em;
 }
+
 #phone {
-    margin-top: 5px;
+  margin-top: 5px;
 }
-
-/*phone number*/
-#phone a {
-    text-align: right;
-    padding-bottom: 0px;
+#phone a { /* Phone number */
+  text-align: right;
+  padding-bottom: 0;
 }
-
-/* we deliver */
-#phone div {
-    color: #557c3e;
-    text-alight: right;
-    padding-right: 15px;
+#phone div { /* We Deliver */
+  color: #557c3e;
+  text-align: right;
+  padding-right: 15px;
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid #61122f;
+  border: 1px solid #61122f;
 }
-
 .navbar-header button.navbar-toggle {
-    clear: both;
-    margin-top: -30px;
+  clear: both;
+  margin-top: -30px;
 }
+/* END HEADER */
 
 /* FOOTER */
 .panel-footer {
@@ -104,7 +90,6 @@ body {
   background-color: #222;
   border-top: 0;
 }
-
 .panel-footer div.row {
   margin-bottom: 35px;
 }
@@ -127,23 +112,25 @@ body {
 }
 /* END FOOTER */
 
+
+
+/* HOME PAGE */
 .container .jumbotron {
-    box-shadow: 0 0 50px #3f0c1f;
-    border: 2px solid #3f0c1f;
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
 }
 
 #menu-tile, #specials-tile, #map-tile {
-    height: 250px;
-    width: 100%;
-    margin-bottom: 15px;
-    position: relative;
-    border: 2px solid #3F0C1F;
-    overflow: hidden;
-  }
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
-    box-shadow: 0 1px 5px 1px #cccccc;
-}   
-
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
 #menu-tile {
   background: url('../images/menu-tile.jpg') no-repeat;
   background-position: center;
@@ -152,7 +139,6 @@ body {
   background: url('../images/specials-tile.jpg') no-repeat;
   background-position: center;
 }
-
 #menu-tile span, #specials-tile span, #map-tile span {
   position: absolute;
   bottom: 0;
@@ -164,8 +150,8 @@ body {
   background-color: #000;
   color: #fff;
   opacity: .8;
-} 
-/* END HEADER */
+}
+/* END HOME PAGE */
 
 /* MENU CATEGORIES PAGE */
 .category-tile { 
@@ -243,12 +229,13 @@ h3.menu-item-title {
 }
 /* END SINGLE CATEGORY PAGE */
 
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-    .container .jumbotron {
-        background: url('../images/jumbotron_1200.jpg') no-repeat;
-        height: 675px;
-      }
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
 }
 
 /********** Medium devices only **********/
@@ -262,17 +249,17 @@ h3.menu-item-title {
   }
   /* End Header */
 
-   /* Home Page */
-   .container .jumbotron {
+  /* Home Page */
+  .container .jumbotron {
     background: url('../images/jumbotron_992.jpg') no-repeat;
-    height: 558px; 
+    height: 558px;
   }
   /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-    /* Home Page */
+  /* Home Page */
   .container .jumbotron {
     background: url('../images/jumbotron_768.jpg') no-repeat;
     height: 432px;
@@ -302,12 +289,10 @@ h3.menu-item-title {
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
   }
-
   #collapsable-nav a span { /* Collapsed nav menu glyph */
     font-size: 1em;
     margin-right: 5px;
   }
-  /* End Header */
 
   #call-btn > a {
     font-size: 1.5em;
@@ -324,6 +309,7 @@ h3.menu-item-title {
     letter-spacing: .1em;
     text-transform: uppercase;
   }
+  /* End Header */
 
   /* Footer */
   .panel-footer section {
@@ -343,7 +329,6 @@ h3.menu-item-title {
     margin-top: 30px;
     padding: 0;
   }
-
   #menu-tile, #specials-tile {
     width: 360px;
     margin: 0 auto 15px;
@@ -359,6 +344,7 @@ h3.menu-item-title {
     text-align: center;;
   }
 }
+
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
@@ -384,3 +370,6 @@ h3.menu-item-title {
     width: 100%;
   }
 }
+
+
+
